@@ -1,0 +1,381 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(102, 100, 100);
+}
+.upperSection{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #26b;
+    height: 200px;
+    color: white;
+    padding: 30px;
+}
+.myDreamSection p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.userIcon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(https://th.bing.com/th/id/R.19fa7497013a87bd77f7adb96beaf768?rik=144XvMigWWj2bw&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f5%2fUser-Profile-PNG-High-Quality-Image.png&ehk=%2bat%2brmqQuJrWL609bAlrUPYgzj%2b%2f7L1ErXRTN6ZyxR0%3d&risl=&pid=ImgRaw&r=0);
+    background-size: contain;
+}
+.menuList{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.menuList li{
+    margin: 10px 10px;
+}
+.profile{
+    display: flex;
+    justify-content: space-around;
+}
+.profile i{
+    margin-right: 10px;
+    line-height: 35px;
+}
+
+#travelInfo-form{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    padding:5px;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    transform: translateY(-30px);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), white);
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px rgb(181, 182, 182);
+}
+.location{
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.116), white);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-left: 10px;
+    padding: 12px 60px 12px 10px;
+    border-radius: 10px;
+}
+.checkIn-date{
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.116), white);
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-left: 10px;
+  padding: 12px 40px 12px 10px;
+  border-radius: 10px;
+}
+.checkOut-date{
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.116), white);
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-left: 10px;
+  padding: 12px 40px 12px 10px;
+  border-radius: 10px;
+}
+.guests{
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.116), white);
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-left: 10px;
+  padding: 12px 40px 12px 10px;
+  border-radius: 10px;
+}
+.searchBtn{
+    background-color: rgb(97, 139, 218);
+    color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0px 10px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    border: transparent;
+    width: 100%;
+}
+.exploreHotelsSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+/* left section */
+.leftDiv{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.searchProperty{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 150px;
+    background-color: rgb(236, 236, 236);
+    padding: 15px;
+    border-radius: 20px;
+}
+.searchProperty h5{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.location-input{
+    background: linear-gradient(to bottom, rgba(221, 220, 220, 0.116), white);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-left: 10px;
+    padding: 12px 60px 12px 10px;
+    border-radius: 6px;
+    border-color: rgb(248, 246, 246);
+}
+.budgetFilter{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.budgetFilter h5{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+}
+.budget{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 30px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* Right section */
+.rightDiv{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    margin-left: 30px;
+}
+.tableAndDropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+table,tr,td{
+    border: 2px solid #26b;
+    border-collapse: collapse;
+    padding: 10px;
+}
+tr{
+    border-radius: 10px;
+}
+.dropdown{
+    padding: 10px;
+}
+.hotelInformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+    margin-top: 20px;
+}
+.hotelInfo{
+    position: relative;
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(205, 207, 211);
+    border-radius: 15px;
+    height: 300px;
+    margin-top: 20px;
+}
+.hotelImg{
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 30%;
+    border: 2px;
+    border-radius: 10px;
+}
+#hotelImg1{
+    background-image: url(./images/lakesideWaterfront.jpg);
+}
+#hotelImg2{
+    background-image: url(./images/juliaDensResort.jpg);
+}
+#hotelImg3{
+    background-image: url(./images/Aghnim.jpg);
+}
+#hotelImg4{
+    background-image: url(./images/marineford.jpg);
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.description h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.rate{
+    display: flex;
+    align-items: flex-start;
+}
+.rate p{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.p-div{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.p-div p{
+    line-height: 15px;
+}
+.p1{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.availabilityBtn{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    background-color: rgba(0, 102, 255, 0.774);
+    border-radius: 7px;
+    border: 1px solid;
+}
+.discounts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:end;
+}
+.offer{
+    background-color: rgb(228, 47, 47);
+    padding: 7px;
+    border-radius: 10px;
+}
+#offer3{
+    background-color: orange;
+}
+.offer p{
+    font-size: 15px;
+    color: white;
+}
+.regular-discount{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.regular-discount .p1{
+    background-color: green;
+    padding: 6px;
+    color: white;
+    border-radius: 8px;
+    width:50px;
+    margin-top: 50px;
+}
+.regular-discount p{
+    font-size: 12px;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+}
+.oldPrice{
+    font-size: 12px;
+    color: red;
+}
+.newPrice{
+    font-size: 15px;
+    color: black;
+}
+.taxFees p{
+    font-size: 12px;
+}

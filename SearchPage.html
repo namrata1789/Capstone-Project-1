@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchPage</title>
+    <link rel="stylesheet" href="./SearchPage.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/LATEST-VERSION">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="mainContainer">
+        <!--uppermost section-->
+        <section class="upperSection">
+            <div class="myDreamSection"><p> <i class="fa-solid fa-plane" style="color: white;"></i> my Dream Place</p></div>
+            <div class="navBar">
+                <ul class="menuList">
+                    <li id="item1" class="menuItem">Home</li>
+                    <li id="item2" class="menuItem">Discover</li>
+                    <li id="item3" class="menuItem">Activities</li>
+                    <li id="item4" class="menuItem">About</li>
+                    <li id="item5" class="menuItem">Contact</li>
+                </ul>
+            </div>
+            <div class="profile">
+                <i class="fa-solid fa-bell large" style="color: white;"></i>
+                <div class="userIcon">
+                </div>
+            </div>
+        </section>
+         <!--Info form section-->
+        <section class="formSection">
+            <div class="info">
+                <form id="travelInfo-form" actio="">
+                    <div class="location">
+                        <input class="location-input" type="text" placeholder="Where are you going?">
+                    </div>
+                    <div class="checkIn">
+                        <input class="checkIn-date" type="date" placeholder="Check in date">
+                    </div>
+                    <div class="checkOut">
+                        <input class="checkOut-date" type="date" placeholder="Check out date">
+                    </div>
+                    <div class="guests">
+                        <input class="no-of-guests" type="number" placeholder="Guests">
+                    </div>
+                    <div><button type="submit" class="searchBtn">Search</button></div>
+                </form>
+            </div>
+        </section>
+        <!--Section Partitioning-->
+        <section class="exploreHotelsSection">
+            <!--left partition-->
+            <div class="leftDiv">
+                <!--Property search-->
+                <div class="searchProperty">
+                    <h5>Search Property by name</h5>
+                    <form>
+                        <div class="typeLocation">
+                            <input class="location-input" type="text" placeholder="eg.Beach westpalm">
+                        </div>
+                    </form>
+                </div>
+                <!--Budget filter-->
+                <div class="budgetFilter">
+                    <h5>Filter By</h5>
+                </div>
+                <div class="budget">
+                    <div>
+                        <p>Your budget per day</p>
+                    </div>
+                    <div class="checkboxes">
+                        <div class="checkbox1">
+                            <label><input class="checkbox" type="checkbox">$ 0 - $ 200</label>
+                        </div>
+                        <div class="checkbox2">
+                            <label><input class="checkbox" type="checkbox">$ 200 - $ 500</label>
+                        </div>
+                        <div class="checkbox3">
+                            <label><input class="checkbox" type="checkbox">$ 500 - $ 1000</label>
+                        </div>
+                        <div class="checkbox4">
+                            <label><input class="checkbox" type="checkbox">$ 1000 - $ 2000</label>
+                        </div>
+                        <div class="checkbox5">
+                            <label><input class="checkbox" type="checkbox">$ 2000 - $ 5000</label>
+                        </div>
+                    </div>
+                   <div class="settingBudget">
+                    <p>Set your own budget</p>
+                    <div class="switch">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                   </div>
+                </div>
+            </div>
+
+            <!--Right partition-->
+            <div class="rightDiv">
+                <div class="searchResult">
+                    <h1>Melbourne:2,582 search results found</h1>
+                    <div class="tableAndDropdown">
+                        <div class="tableDiv">
+                            <table class="table">
+                                <tr>
+                                    <td>Our top picks</td>
+                                    <td>Hotel and apartments</td>
+                                    <td>Residence</td>
+                                    <td>Resorts</td>
+                                    <td>Shared Space</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="dropdown">
+                            <select name="recommendation" placeholder="Sort by">
+                                <option value="Recommended">Recommended</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotelInformation">
+                    <!--hotel1-->
+                    <div id="hotelInfo1" class="hotelInfo">
+                        <div id="hotelImg1" class="hotelImg"></div>
+                        <div class="description">
+                            <h4>Lakeside Motel Waterfront</h4>
+                            <div class="rate">
+                                <div class="star-div">
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-regular fa-star-half-stroke" style="color: #cd9432;"></i>
+                                </div>
+                                <p>4.5 (1200 views)</p>
+                            </div>
+                            <div class="p-div">
+                                <p class="p1">Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne,parking and a late</p>
+                                <p>checkout.Gym included.Flexible cancellation applies</p>
+                            </div>
+                            <div class="btn">
+                                <button type="submit" class="availabilityBtn">See availability</button>
+                            </div>
+                        </div>             
+                        <div class="discounts">
+                            <div id="offer3" class="offer">
+                                <p>Book now and receieve 15% off</p>
+                            </div>
+                            <div class="regular-discount">
+                                <p class="p1">5% off</p>
+                                <p>1 room 2 days</p>
+                            </div>
+                            <div class="price">
+                                <p class="oldPrice"><del>$150</del></p>
+                                <p class="newPrice">$130</p>
+                            </div>
+                            <div class="taxFees"><p>includes taxes and fees</p></div>
+                        </div>
+                    </div>
+                    <!--Hotel2-->
+                    <div id="hotelInfo2" class="hotelInfo">
+                        <div id="hotelImg2" class="hotelImg"></div>
+                        <div class="description">
+                            <h4>Julia Dens Resort</h4>
+                            <div class="rate">
+                                <div class="star-div">
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-regular fa-star-half-stroke" style="color: #cd9432;"></i>
+                                </div>
+                                <p>4.5 (1200 views)</p>
+                            </div>
+                            <div class="p-div">
+                                <p class="p1">Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne,parking and a late</p>
+                                <p>checkout.Gym included.Flexible cancellation applies</p>
+                            </div>
+                            <div class="btn">
+                                <button type="submit" class="availabilityBtn">See availability</button>
+                            </div>
+                        </div>             
+                        <div class="discounts">
+                            <div id="offer3" class="offer">
+                            </div>
+                            <div class="regular-discount">
+                                <p>1 room 2 days</p>
+                            </div>
+                            <div class="price">
+                                <p class="oldPrice"><del></del></p>
+                                <p class="newPrice">$240</p>
+                            </div>
+                            <div class="taxFees"><p>includes taxes and fees</p></div>
+                        </div>
+                    </div>
+                    <!--Hotel3-->
+                    <div id="hotelInfo3" class="hotelInfo">
+                        <div id="hotelImg3" class="hotelImg"></div>
+                        <div class="description">
+                            <h4>Aghnim Scepter Hotel</h4>
+                            <div class="rate">
+                                <div class="star-div">
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-regular fa-star-half-stroke" style="color: #cd9432;"></i>
+                                </div>
+                                <p>4.5 (1200 views)</p>
+                            </div>
+                            <div class="p-div">
+                                <p class="p1">Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne,parking and a late</p>
+                                <p>checkout.Gym included.Flexible cancellation applies</p>
+                            </div>
+                            <div class="btn">
+                                <button type="submit" class="availabilityBtn">See availability</button>
+                            </div>
+                        </div>             
+                        <div class="discounts">
+                            <div id="offer3" class="offer">
+                                <p>Receive 30% discount on a restaurent</p>
+                            </div>
+                            <div class="regular-discount">
+                                <p>1 room 2 days</p>
+                            </div>
+                            <div class="price">
+                                <p class="oldPrice"><del></del></p>
+                                <p class="newPrice">$300</p>
+                            </div>
+                            <div class="taxFees"><p>includes taxes and fees</p></div>
+                        </div>
+                    </div>
+                    <!--hotel4-->
+                    <div id="hotelInfo4" class="hotelInfo">
+                        <div id="hotelImg4" class="hotelImg"></div>
+                        <div class="description">
+                            <h4>Marineford Hotel</h4>
+                            <div class="rate">
+                                <div class="star-div">
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cd9432;"></i>
+                                    <i class="fa-regular fa-star-half-stroke" style="color: #cd9432;"></i>
+                                </div>
+                                <p>4.5 (1200 views)</p>
+                            </div>
+                            <div class="p-div">
+                                <p class="p1">Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne,parking and a late</p>
+                                <p>checkout.Gym included.Flexible cancellation applies</p>
+                            </div>
+                            <div class="btn">
+                                <button type="submit" class="availabilityBtn">See availability</button>
+                            </div>
+                        </div>             
+                        <div class="discounts">
+                            <div id="offer4" class="offer">
+                                <p></p>
+                            </div>
+                            <div class="regular-discount">
+                                <p>1 room 2 days</p>
+                            </div>
+                            <div class="price">
+                                <p class="oldPrice"><del></del></p>
+                                <p class="newPrice">$120</p>
+                            </div>
+                            <div class="taxFees"><p>includes taxes and fees</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,373 @@
+*{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.mainContainer{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.upperSection{
+    display: flex;
+    justify-content: space-between;
+}
+.menuList{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.menuList li{
+    margin: 10px 10px;
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
+}
+/* .profile i{
+    align-items:baseline;
+    line-height: 2px;
+} */
+.userIcon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(https://th.bing.com/th/id/R.19fa7497013a87bd77f7adb96beaf768?rik=144XvMigWWj2bw&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f5%2fUser-Profile-PNG-High-Quality-Image.png&ehk=%2bat%2brmqQuJrWL609bAlrUPYgzj%2b%2f7L1ErXRTN6ZyxR0%3d&risl=&pid=ImgRaw&r=0);
+    background-size: contain;
+}
+.mainImage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px 20px;
+    height: 600px;
+    background-image: url(./images/unesco-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+}
+.mainImage h1{
+    font-size: 40px;
+    font-weight: 900px;
+}
+.mainImage p{
+    font-size: 15px;
+}
+#travelInfo-form{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    transform: translateY(-50px);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), white);
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px rgb(181, 182, 182);
+}
+.location{
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.116), white);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-left: 10px;
+    padding: 12px 60px 12px 10px;
+    border-radius: 10px;
+}
+.checkIn-date{
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.116), white);
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-left: 10px;
+  padding: 12px 40px 12px 10px;
+  border-radius: 10px;
+}
+.checkOut-date{
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.116), white);
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-left: 10px;
+  padding: 12px 40px 12px 10px;
+  border-radius: 10px;
+}
+.guests{
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.116), white);
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-left: 10px;
+  padding: 12px 40px 12px 10px;
+  border-radius: 10px;
+}
+.searchBtn{
+    background-color: rgb(97, 139, 218);
+    color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0px 10px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    border: transparent;
+    width: 100%;
+}
+.caution{
+    background-color: rgb(234, 234, 168);
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.caution i{
+    margin-right: 3px;
+}
+.caution a{
+    text-decoration: none;
+    color: rgb(32, 119, 233);
+}
+.dreamVacation{
+    display: flex;
+    flex-direction: column;
+}
+.dreamVacation h2{    
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(46, 41, 41);
+  margin:20px 20px;
+}
+.dreamVacation p{ 
+    color: rgb(46, 41, 41);
+    line-height: 10px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.dreamPlaces-div{
+    position: relative;
+    display: flex;
+    width:100%;
+}
+.dreamPlace{
+    width:25%;   
+}
+.dreamPlace h3{
+    margin-left: 5px;
+}
+.dreamPlace p{
+    margin-left: 5px;
+}
+.dreamPlaceImg{ 
+    border-radius: 8px;
+}
+.dreamPlace img{
+    position: relative;
+    height: 250px;
+    width: 100%;    
+    border-radius: 15px;
+}
+.inspirationDiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inspirationDiv h2{    
+  font-size: 30px;
+  color: rgb(46, 41, 41);
+  font-weight: 700;
+  margin: 20px 20px;
+}
+.places{
+    position: relative;
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+}
+.sydney{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(./images/sydney.jpg);
+    height: 300px;
+    width: 33%;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.sydney h4{
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 10px 50px;
+}
+.sydney p{
+    color: white;
+    margin: 0px 50px;
+    line-height: 25px;
+}
+.veganTraveller{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(./images/vegan3.jpg);
+    height: 300px;
+    width: 33%;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.veganTraveller h4{    
+    color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 10px 50px;
+}
+.veganTraveller p{
+    color: white;
+    margin: 0px 50px;
+    line-height: 25px;
+}
+.worldTop10{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(./images/world.jpg);
+    height: 300px;
+    width: 33%;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.worldTop10 h4{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 50px;
+}
+.worldTop10 p{
+    color: white;
+    margin: 0px 50px;
+    line-height: 25px;
+}
+.popularHotels{
+    display: flex;
+    flex-direction: column;
+}
+.popularHotels h2{
+    font-size: 30px;
+    color: rgb(46, 41, 41);
+    font-weight: 700;
+    margin: 20px 20px;
+}
+.hotels{
+    position: relative;
+    display: flex;
+    width: 100%;    
+}
+.hotelHotel{
+    position: relative;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hotelHotel img{    
+    position: relative;
+    height: 250px;
+    width: 100%;    
+    border-radius: 15px;
+}
+.molileApp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;    
+    margin-top:60px;
+    border-radius: 15px;
+    background-image: url('./images/mobileapp3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div-p p{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 50px;
+}
+.downloadAppBtn{
+    background-color: rgb(97, 139, 218);
+    color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0px 10px;
+    padding: 15px 25px 15px 25px;
+    margin: 10px 50px;
+    border-radius: 10px;
+    border: transparent;
+}
+.exploreWorld{
+    display: flex;
+    margin:60px 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.exploreWorld h4{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 50px;
+}
+.exploreWorld p{
+    font-size: 12px;
+    color: rgb(33, 111, 246);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.columns{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.columns ul{
+    list-style-type: none;
+}
+.columns h6{
+    font-size: 15px;
+    font-weight: 600;
+}
+.columns li{
+    font-size: 12px;
+    font-weight: 200;
+}
+#seeMore{
+    color: rgb(84, 137, 243);
+}
+.copyright{
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgb(243, 235, 235);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.copyright p{
+    font-size: 12px;
+}
