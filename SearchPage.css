@@ -109,6 +109,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* left section */
@@ -377,5 +379,69 @@ tr{
     color: black;
 }
 .taxFees p{
+    font-size: 12px;
+}
+.cautionSection{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.caution{
+    background-color: rgb(234, 234, 168);
+    font-size: 12px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.caution i{
+    margin-right: 3px;
+}
+.caution a{
+    text-decoration: none;
+    color: rgb(32, 119, 233);
+}
+
+.footerSection{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.columns{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.columns ul{
+    list-style-type: none;
+}
+.columns h6{
+    font-size: 15px;
+    font-weight: 600;
+}
+.columns li{
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 20px;
+}
+
+.copyrightSection{
+
+}
+#seeMore{
+    color: rgb(84, 137, 243);
+}
+.copyright{
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgb(243, 235, 235);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 7px;
+}
+.copyright p{
     font-size: 12px;
 }
